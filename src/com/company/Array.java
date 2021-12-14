@@ -10,10 +10,26 @@ public class Array {
     }
 
     public void insert(int item) {
-        //Copy values to new array
+        if (items.length == count) {
+            int[] newItems = new int[count * 2];
 
-        //Add a new value
+            for (int i = 0; i < count; i++)
+                newItems[i] = items[i];
+            items = newItems;
+        }
+
         items[count++] = item;
+    }
+
+    public void removeAt(int index) {
+        if (index < 0 || index >= count)
+            throw new IllegalArgumentException();
+
+
+        for (int i = index; i < count; i++)
+            items[i] = items[i + 1];
+
+        count--;
     }
 
     public void print() {

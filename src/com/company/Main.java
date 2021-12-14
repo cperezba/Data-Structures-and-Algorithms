@@ -15,6 +15,10 @@ public class Main {
 
     Array numbers = new Array(3);
 
+    numbers.insert(1);
+    numbers.insert(50);
+    numbers.insert(2);
+
     numbers.print();
 
     }

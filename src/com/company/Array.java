@@ -9,9 +9,12 @@ public class Array {
         items = new int[length];
     }
 
-//    public void insert(int item) {
-//
-//    }
+    public void insert(int item) {
+        //Copy values to new array
+
+        //Add a new value
+        items[count++] = item;
+    }
 
     public void print() {
         for (int i = 0; i < count; i++) {

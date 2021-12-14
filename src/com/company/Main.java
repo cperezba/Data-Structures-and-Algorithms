@@ -23,8 +23,8 @@ public class Main {
         numbers.print();
 
         System.out.println("indexOf:");
-        System.out.println(numbers.indexOf(100));
 
+        System.out.println(numbers.max());
 
 
     }

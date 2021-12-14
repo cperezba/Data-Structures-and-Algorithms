@@ -40,6 +40,16 @@ public class Array {
             return -1;
     }
 
+    public int max() {
+        int largestNumber = 0;
+
+        for (int i = 0; i < count; i++) {
+            if (items[i] > largestNumber)
+                largestNumber = items[i];
+        }
+        return largestNumber;
+    }
+
     public void print() {
         for (int i = 0; i < count; i++) {
             System.out.println(items[i]);

@@ -20,9 +20,12 @@ public class Main {
     numbers.insert(30);
     numbers.insert(40);
 
-    numbers.removeAt(0);
+        numbers.print();
 
-    numbers.print();
+        System.out.println("indexOf:");
+        System.out.println(numbers.indexOf(100));
+
+
 
     }
 }

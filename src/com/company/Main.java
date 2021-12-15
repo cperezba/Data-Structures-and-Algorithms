@@ -18,14 +18,17 @@ public class Main {
     numbers.insert(10);
     numbers.insert(20);
     numbers.insert(30);
-    numbers.insert(40);
+    numbers.insert(500);
 
-        numbers.print();
+    numbers.print();
 
-        System.out.println("indexOf:");
 
-        System.out.println(numbers.max());
+    System.out.println("\nLargest number:");
+    numbers.max();
 
+
+    System.out.println("\nReversed: ");
+    numbers.reverse();
 
     }
 }

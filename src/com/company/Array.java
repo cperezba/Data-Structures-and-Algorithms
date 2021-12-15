@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Arrays;
+
 public class Array {
     private int[] items;
     private int count;
@@ -7,6 +9,19 @@ public class Array {
 
     public Array(int length) {
         items = new int[length];
+    }
+
+    public void reverse() {
+        int [] reverseArray = new int[count];
+        int marker = count;
+
+        for (int i = 0; i < count; i++) {
+            reverseArray[marker - 1] = items[i];
+
+            marker--;
+        }
+
+        System.out.println(Arrays.toString(reverseArray));
     }
 
     public void insert(int item) {
@@ -40,14 +55,15 @@ public class Array {
             return -1;
     }
 
-    public int max() {
+    public void max() {
         int largestNumber = 0;
 
         for (int i = 0; i < count; i++) {
             if (items[i] > largestNumber)
                 largestNumber = items[i];
         }
-        return largestNumber;
+
+        System.out.println(largestNumber);
     }
 
     public void print() {
